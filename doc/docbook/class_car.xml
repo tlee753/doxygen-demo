@@ -1,0 +1,215 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_car">
+<title>Car class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_car_8h">&lt;Car.h&gt;</link></programlisting>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string make<para><emphasis>the make of the car</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string model<para><emphasis>the model of the car</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int year<para><emphasis>the year the car was made</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int cost<para><emphasis>the cost of the car</emphasis></para></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="class_car_1a9842a8a734dce534d3be923224cd6b03">Car</link> (
+string make, string model, int year, int cost)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_car_1a9122cc2786555a4ebf391419ae00789e">getMake</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>string <link linkend="class_car_1a289787c878ee8aa2f5bd111ff2d927f5">getModel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_car_1a41336fc661d8919c2323a3b4554e3a19">getYear</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="class_car_1ab96cce1215527b2a6f1920e848d145e7">getCost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="class_car_1ae7eb35511bf597b017bfbaaa6f91ff79">highClass</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>represents a car with an make, model, year, and cost</para>
+
+<para><formalpara><title>Author: </title>
+
+<para>tlee753 </para>
+</formalpara>
+<formalpara><title>Version: </title>
+
+<para>1.0 </para>
+</formalpara>
+</para>
+                <para>Definition at line 20 of file Car.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Car.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="class_car_1a9842a8a734dce534d3be923224cd6b03">
+                <title>Car::Car (string make, string model, int year, int cost)</title> <emphasis></emphasis>
+                
+<para>constructor</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>make</entry>
+                                <entry>
+<para>the make of the car </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>model</entry>
+                                <entry>
+<para>the model of the car </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>year</entry>
+                                <entry>
+<para>the year the car was made </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>cost</entry>
+                                <entry>
+<para>the cost of the car </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="class_car_1a9122cc2786555a4ebf391419ae00789e">
+                <title>string Car::getMake ()</title> <emphasis></emphasis>
+                
+<para>returns make of car</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>make of car </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_car_1a289787c878ee8aa2f5bd111ff2d927f5">
+                <title>string Car::getModel ()</title> <emphasis></emphasis>
+                
+<para>returns model of car</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>model of car </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_car_1a41336fc661d8919c2323a3b4554e3a19">
+                <title>int Car::getYear ()</title> <emphasis></emphasis>
+                
+<para>returns year car was made</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>year of car </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_car_1ab96cce1215527b2a6f1920e848d145e7">
+                <title>int Car::getCost ()</title> <emphasis></emphasis>
+                
+<para>returns cost of car</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>cost of car </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="class_car_1ae7eb35511bf597b017bfbaaa6f91ff79">
+                <title>bool Car::highClass ()</title> <emphasis></emphasis>
+                
+<para>tells whether or not the car is top quality</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>whether or not the car is high class </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

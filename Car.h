@@ -30,6 +30,10 @@ class Car {
     
     public:
         Car(string make, string model, int year, int cost);
+        string getMake();
+        string getModel();
+        int getYear();
+        int getCost();
         bool highClass();
 };
 

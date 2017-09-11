@@ -9,6 +9,13 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -45,6 +52,20 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_car_8cpp_source.html','');});
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -64,16 +85,24 @@ $(function() {
 <div class="title">Car.cpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_car_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_car_8h.html">Car.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_car.html#a9842a8a734dce534d3be923224cd6b03">   20</a></span>&#160;<a class="code" href="class_car.html#a9842a8a734dce534d3be923224cd6b03">Car::Car</a>(<span class="keywordtype">string</span> make, <span class="keywordtype">string</span> model, <span class="keywordtype">int</span> year, <span class="keywordtype">int</span> cost) {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;make = make;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;model = model;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;year = year;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;cost = cost;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">   32</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">Car::highClass</a>() {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> (cost &gt; 100000);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="ttc" id="class_car_html_a9842a8a734dce534d3be923224cd6b03"><div class="ttname"><a href="class_car.html#a9842a8a734dce534d3be923224cd6b03">Car::Car</a></div><div class="ttdeci">Car(string make, string model, int year, int cost)</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00020">Car.cpp:20</a></div></div>
+<a href="_car_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_car_8h.html">Car.h</a>&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_car.html#a9842a8a734dce534d3be923224cd6b03">   20</a></span>&#160;<a class="code" href="class_car.html#a9842a8a734dce534d3be923224cd6b03">Car::Car</a>(<span class="keywordtype">string</span> make, <span class="keywordtype">string</span> model, <span class="keywordtype">int</span> year, <span class="keywordtype">int</span> cost) {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    this-&gt;make = make;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    this-&gt;model = model;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    this-&gt;year = year;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    this-&gt;cost = cost;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_car.html#a9122cc2786555a4ebf391419ae00789e">   32</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_car.html#a9122cc2786555a4ebf391419ae00789e">Car::getMake</a>() {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">return</span> make;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_car.html#a289787c878ee8aa2f5bd111ff2d927f5">   41</a></span>&#160;<span class="keywordtype">string</span> <a class="code" href="class_car.html#a289787c878ee8aa2f5bd111ff2d927f5">Car::getModel</a>() {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> model;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_car.html#a41336fc661d8919c2323a3b4554e3a19">   50</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_car.html#a41336fc661d8919c2323a3b4554e3a19">Car::getYear</a>() {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> year;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_car.html#ab96cce1215527b2a6f1920e848d145e7">   59</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="class_car.html#ab96cce1215527b2a6f1920e848d145e7">Car::getCost</a>() {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> cost;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">   68</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">Car::highClass</a>() {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordflow">return</span> (cost &gt; 100000);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div><div class="ttc" id="class_car_html_a9842a8a734dce534d3be923224cd6b03"><div class="ttname"><a href="class_car.html#a9842a8a734dce534d3be923224cd6b03">Car::Car</a></div><div class="ttdeci">Car(string make, string model, int year, int cost)</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00020">Car.cpp:20</a></div></div>
+<div class="ttc" id="class_car_html_a41336fc661d8919c2323a3b4554e3a19"><div class="ttname"><a href="class_car.html#a41336fc661d8919c2323a3b4554e3a19">Car::getYear</a></div><div class="ttdeci">int getYear()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00050">Car.cpp:50</a></div></div>
+<div class="ttc" id="class_car_html_a289787c878ee8aa2f5bd111ff2d927f5"><div class="ttname"><a href="class_car.html#a289787c878ee8aa2f5bd111ff2d927f5">Car::getModel</a></div><div class="ttdeci">string getModel()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00041">Car.cpp:41</a></div></div>
 <div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
-<div class="ttc" id="class_car_html_ae7eb35511bf597b017bfbaaa6f91ff79"><div class="ttname"><a href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">Car::highClass</a></div><div class="ttdeci">bool highClass()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00032">Car.cpp:32</a></div></div>
+<div class="ttc" id="class_car_html_ab96cce1215527b2a6f1920e848d145e7"><div class="ttname"><a href="class_car.html#ab96cce1215527b2a6f1920e848d145e7">Car::getCost</a></div><div class="ttdeci">int getCost()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00059">Car.cpp:59</a></div></div>
+<div class="ttc" id="class_car_html_ae7eb35511bf597b017bfbaaa6f91ff79"><div class="ttname"><a href="class_car.html#ae7eb35511bf597b017bfbaaa6f91ff79">Car::highClass</a></div><div class="ttdeci">bool highClass()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00068">Car.cpp:68</a></div></div>
+<div class="ttc" id="class_car_html_a9122cc2786555a4ebf391419ae00789e"><div class="ttname"><a href="class_car.html#a9122cc2786555a4ebf391419ae00789e">Car::getMake</a></div><div class="ttdeci">string getMake()</div><div class="ttdef"><b>Definition:</b> <a href="_car_8cpp_source.html#l00032">Car.cpp:32</a></div></div>
 <div class="ttc" id="_car_8h_html"><div class="ttname"><a href="_car_8h.html">Car.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.13
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="_car_8cpp.html">Car.cpp</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
 </body>
 </html>

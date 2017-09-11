@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>doxygen-demo</title>
+
+<para>example of doxygen usage for my own purposes</para>
+
+<para>ok so this is one of the pages </para>
+
+</chapter>

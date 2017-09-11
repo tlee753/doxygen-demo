@@ -117,10 +117,6 @@
 \begin{document}
 
 % Titlepage & ToC
-\hypersetup{pageanchor=false,
-             bookmarksnumbered=true,
-             pdfencoding=unicode
-            }
 \pagenumbering{alph}
 \begin{titlepage}
 \vspace*{7cm}
@@ -135,12 +131,15 @@
 \tableofcontents
 \clearemptydoublepage
 \pagenumbering{arabic}
-\hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
+\chapter{The mainpage documentation}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{A\+PI}
+\label{md__a_p_i}
+\input{md__a_p_i}
 \chapter{doxygen-\/demo}
 \label{md__r_e_a_d_m_e}
-\Hypertarget{md__r_e_a_d_m_e}
 \input{md__r_e_a_d_m_e}
 \chapter{Class Index}
 \input{annotated}

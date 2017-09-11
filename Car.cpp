@@ -25,6 +25,42 @@ Car::Car(string make, string model, int year, int cost) {
 }
 
 /*!
+ * returns make of car
+ *
+ * @return make of car
+ */
+string Car::getMake() {
+    return make;
+}
+
+/*!
+ * returns model of car
+ *
+ * @return model of car
+ */
+string Car::getModel() {
+    return model;
+}
+
+/*!
+ * returns year car was made
+ *
+ * @return year of car
+ */
+int Car::getYear() {
+    return year;
+}
+
+/*!
+ * returns cost of car
+ *
+ * @returns cost of car
+ */
+int Car::getCost() {
+    return cost;
+}
+
+/*!
  * tells whether or not the car is top quality
  *
  * @return whether or not the car is high class

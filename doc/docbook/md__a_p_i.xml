@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>API</title>
+
+<para><formalpara><title>Commenting</title></formalpara>
+</para>
+
+<para><itemizedlist>
+<listitem>
+<para>commenting should be done in QT style <literallayout><computeroutput>/*!
+&#32;*&#32;this&#32;is&#32;an&#32;example&#32;multiline&#32;comment
+&#32;*&#32;
+&#32;*&#32;@return&#32;with&#32;javadoc&#32;style&#32;arguments
+&#32;*/
+
+&#32;//!&#32;or&#32;a&#32;single&#32;line&#32;comment&#32;if&#32;you&#32;prefer
+</computeroutput></literallayout> </para>
+</listitem></itemizedlist>
+</para>
+
+</chapter>
