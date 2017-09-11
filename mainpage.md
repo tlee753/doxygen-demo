@@ -1,0 +1,3 @@
+\mainpage Mainpage
+
+This is a simple example of a mainpage for a project.

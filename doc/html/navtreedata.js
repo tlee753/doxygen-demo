@@ -1,8 +1,9 @@
 var NAVTREE =
 [
   [ "Doxygen Demo", "index.html", [
-    [ "The mainpage documentation", "index.html", null ],
+    [ "Mainpage", "index.html", null ],
     [ "API", "md__a_p_i.html", null ],
+    [ "Documentation", "md__documentation.html", null ],
     [ "doxygen-demo", "md__r_e_a_d_m_e.html", null ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],

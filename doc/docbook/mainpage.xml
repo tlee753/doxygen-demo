@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>The mainpage documentation</title>
+    <title>Mainpage</title>
 
-<para>This is a simple example of a mainpage you can create yourself. Place this inside of a file called <computeroutput>mainpage.dox</computeroutput> and use doxygen. If you specified <computeroutput>INPUT</computeroutput> or <computeroutput>FILE_PATTERNS</computeroutput> in your Doxyfile please add <computeroutput>.dox</computeroutput> to your file patterns or <computeroutput>mainpage.dox</computeroutput> to your INPUT files. </para>
+<para>This is a simple example of a mainpage for a project. </para>
 
 </chapter>

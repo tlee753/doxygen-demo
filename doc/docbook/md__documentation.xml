@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Documentation</title>
+
+<para><link xlink:href="DE2Bot-Report.pdf">DE2Bot</link></para>
+
+<para><table frame="all">
+    <title></title>
+    <tgroup cols="2" align="left" colsep="1" rowsep="1">
+    <tbody>
+<row>
+<entry>
+<para>Table</para>
+</entry><entry>
+<para>Header  </para>
+</entry></row>
+<row>
+<entry>
+<para>Example</para>
+</entry><entry>
+<para>Style </para>
+</entry></row>
+    </tbody>
+    </tgroup>
+</table>
+</para>
+
+</chapter>
