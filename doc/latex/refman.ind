@@ -1,0 +1,36 @@
+\begin{theindex}
+
+  \item {Car}, \hyperpage{13}
+    \subitem {Car}, \hyperpage{13}
+    \subitem {get\+Cost}, \hyperpage{14}
+    \subitem {get\+Make}, \hyperpage{14}
+    \subitem {get\+Model}, \hyperpage{14}
+    \subitem {get\+Year}, \hyperpage{15}
+    \subitem {high\+Class}, \hyperpage{15}
+  \item {Car.\+cpp}, \hyperpage{17}
+  \item {Car.\+h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {get\+Cost}
+    \subitem {Car}, \hyperpage{14}
+  \item {get\+Make}
+    \subitem {Car}, \hyperpage{14}
+  \item {get\+Model}
+    \subitem {Car}, \hyperpage{14}
+  \item {get\+Year}
+    \subitem {Car}, \hyperpage{15}
+
+  \indexspace
+
+  \item {high\+Class}
+    \subitem {Car}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {Main.\+cpp}, \hyperpage{18}
+  \item {Main.\+cpp}, \hyperpage{17}
+    \subitem {main}, \hyperpage{18}
+
+\end{theindex}
